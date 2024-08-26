@@ -1,0 +1,50 @@
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="mx-3 my-3">
+    <div class="my-2">
+        <label class="form-label">Email:</label>
+        <input formControlName="email" type="email" class="form-control" />
+        <div *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">
+            <small *ngIf="signupForm.get('email')?.errors?.['required']" class="text-danger" >Email is required.</small>
+            <small *ngIf="signupForm.get('email')?.errors?.['email']" class="text-danger" >Invalid email format.</small>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <label class="form-label">Full Name:</label>
+        <input formControlName="fullname" type="text" class="form-control" />
+        <div *ngIf="signupForm.get('fullname')?.invalid && signupForm.get('fullname')?.touched">
+            <small *ngIf="signupForm.get('fullname')?.errors?.['required']" class="text-danger">Username is required.</small>
+            <small *ngIf="signupForm.get('fullname')?.errors?.['minlength']" class="text-danger">Username must be at least 5 characters
+                long.</small>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <label class="form-label">Phone Number:</label>
+        <input formControlName="phoneNumber" type="text" class="form-control" />
+        <div *ngIf="signupForm.get('phoneNumber')?.invalid && signupForm.get('phoneNumber')?.touched">
+            <small *ngIf="signupForm.get('phoneNumber')?.errors?.['required']" class="text-danger">Phone number is required.</small>
+            <small *ngIf="signupForm.get('phoneNumber')?.errors?.['pattern']" class="text-danger">Invalid phone number format.</small>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <label class="form-label">Password:</label>
+        <input formControlName="password" type="password" class="form-control" />
+        <div *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched">
+            <small *ngIf="signupForm.get('password')?.errors?.['required']" class="text-danger">Password is required.</small>
+            <small *ngIf="signupForm.get('password')?.errors?.['minlength']" class="text-danger">Password must be at least 6 characters
+                long.</small>
+        </div>
+    </div>
+
+    <div class="my-2">
+        <label class="form-label">Confirm Password:</label>
+        <input formControlName="confirmPassword" type="password" class="form-control" />
+        <div *ngIf="signupForm.get('confirmPassword')?.invalid && signupForm.get('confirmPassword')?.touched">
+            <small *ngIf="signupForm.get('confirmPassword')?.errors?.['required']" class="text-danger">Confirm Password is required.</small>
+            <small *ngIf="signupForm.errors?.['mismatch']" class="text-danger">Passwords do not match.</small>
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="signupForm.invalid"  class="my-2 w-100 btn btn-primary">Sign Up</button>
+</form>
