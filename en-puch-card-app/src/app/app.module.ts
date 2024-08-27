@@ -6,14 +6,17 @@ import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AuthModuleModule } from './components/auth/auth-module/auth-module.module';
 import { LandingComponent } from './components/landing/landing.component';
+import { DashboardModuleModule } from './components/Dashboard/dashboard-module/dashboard-module.module';
 @NgModule({
   declarations: [
     AppComponent,
-    LandingComponent,  ],
+    LandingComponent,
+   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AuthModuleModule
+    AuthModuleModule,
+    DashboardModuleModule
   ],
   providers: [
     provideClientHydration(),

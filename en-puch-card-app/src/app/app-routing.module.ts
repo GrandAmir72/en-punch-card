@@ -4,12 +4,25 @@ import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/landing', pathMatch: 'full' },
-  {path:'auth',loadChildren: () =>import('./components/auth/auth-module/auth-module.module').then(m => m.AuthModuleModule) },
-  {path:'landing',component:LandingComponent}
+  {
+    path: 'auth',
+    loadChildren: () =>
+      import('./components/auth/auth-module/auth-module.module').then(
+        (m) => m.AuthModuleModule
+      ),
+  },
+  { path: 'landing', component: LandingComponent },
+  {
+    path: 'dashboard',
+    loadChildren: () =>
+      import(
+        './components/Dashboard/dashboard-module/dashboard-module.module'
+      ).then((m) => m.DashboardModuleModule),
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
