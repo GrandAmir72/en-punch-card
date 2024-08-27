@@ -1,1 +1,26 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg d-flex justify-content-evenly">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        <mat-icon class="w-auto h-auto display-5 pointer-cursor-header" [matMenuTriggerFor]="profile">account_circle</mat-icon>
+        <mat-menu #profile="matMenu">
+            <button mat-menu-item>Management</button>
+            <button mat-menu-item>Add New</button>
+        </mat-menu>
+        <div class="set-alternative-justify collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="border-0" mat-stroked-button>Offices</button>
+            <button class="border-0" mat-stroked-button>Reports</button>
+            <button class="border-0" mat-stroked-button>Attendance</button>
+            <button class="border-0" mat-stroked-button>Setting</button>
+            <button class="border-0" mat-stroked-button>Cartable</button>
+            <button class="border-0" mat-stroked-button>Leave</button>
+            <button class="border-0" mat-stroked-button>Mission</button>
+        </div>
+        <img class="pointer-cursor-header"  src="assets\img\punch-card-logo.png"  alt="punch-super-widget" srcset="" height="40" width="40" [matMenuTriggerFor]="superWidget">
+        <mat-menu #superWidget="matMenu">
+            <button mat-menu-item>Management</button>
+            <button mat-menu-item>Add New</button>
+        </mat-menu>
+    </div>
+</nav>

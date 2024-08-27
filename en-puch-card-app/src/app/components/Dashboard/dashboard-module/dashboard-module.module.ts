@@ -5,6 +5,11 @@ import { DashboardModuleRoutingModule } from './dashboard-module-routing.module'
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { MainDashboardComponent } from '../main-dashboard/main-dashboard.component';
 import { NavbarComponent } from '../../Navbar/navbar/navbar.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 
 @NgModule({
@@ -16,6 +21,9 @@ import { NavbarComponent } from '../../Navbar/navbar/navbar.component';
   imports: [
     CommonModule,
     DashboardModuleRoutingModule,
+    MatIconModule,
+    MatMenuModule,
+    MatButtonModule
   ]
 })
 export class DashboardModuleModule { }
