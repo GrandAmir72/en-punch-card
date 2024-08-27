@@ -8,7 +8,7 @@ import { NavbarComponent } from '../../Navbar/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -23,7 +23,8 @@ import {MatButtonModule} from '@angular/material/button';
     DashboardModuleRoutingModule,
     MatIconModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSelectModule
   ]
 })
 export class DashboardModuleModule { }

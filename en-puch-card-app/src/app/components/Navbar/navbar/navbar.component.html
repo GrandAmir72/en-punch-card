@@ -1,9 +1,11 @@
 <nav class="navbar navbar-expand-lg d-flex justify-content-evenly">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-        <mat-icon class="w-auto h-auto display-5 pointer-cursor-header" [matMenuTriggerFor]="profile">account_circle</mat-icon>
+        </button>
+        <mat-icon class="w-auto h-auto display-5 pointer-cursor-header"
+            [matMenuTriggerFor]="profile">account_circle</mat-icon>
         <mat-menu #profile="matMenu">
             <button mat-menu-item>Management</button>
             <button mat-menu-item>Add New</button>
@@ -16,8 +18,15 @@
             <button class="border-0" mat-stroked-button>Cartable</button>
             <button class="border-0" mat-stroked-button>Leave</button>
             <button class="border-0" mat-stroked-button>Mission</button>
+            <mat-form-field>
+                <mat-label>Current Office</mat-label>
+                <mat-select>
+                    <mat-option [value]="'main'">Main</mat-option>
+                </mat-select>
+            </mat-form-field>
         </div>
-        <img class="pointer-cursor-header"  src="assets\img\punch-card-logo.png"  alt="punch-super-widget" srcset="" height="40" width="40" [matMenuTriggerFor]="superWidget">
+        <img class="pointer-cursor-header" src="assets\img\punch-card-logo.png" alt="punch-super-widget" srcset=""
+            height="40" width="40" [matMenuTriggerFor]="superWidget">
         <mat-menu #superWidget="matMenu">
             <button mat-menu-item>Management</button>
             <button mat-menu-item>Add New</button>
