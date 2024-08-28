@@ -9,7 +9,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSelectModule} from '@angular/material/select';
-
+import { SharedModuleModule } from '../../Shared/shared-module/shared-module.module';
 
 
 @NgModule({
@@ -24,7 +24,9 @@ import {MatSelectModule} from '@angular/material/select';
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
-    MatSelectModule
+    MatSelectModule,
+    SharedModuleModule
+    
   ]
 })
 export class DashboardModuleModule { }

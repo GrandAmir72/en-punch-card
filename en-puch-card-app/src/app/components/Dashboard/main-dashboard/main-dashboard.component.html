@@ -1,1 +1,24 @@
-<p>main-dashboard works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <h2>Main </h2>
+        </div>
+        <div class="col-8">
+            <button class="float-end" mat-raised-button>
+                <mat-icon>add_circle_outline</mat-icon>
+                Add Attendance
+            </button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <app-expansion-component [title]="'Offices'"></app-expansion-component>
+        </div>
+        <div class="col">
+            <app-expansion-component [title]="'Reports'"></app-expansion-component>
+        </div>
+        <div class="col">
+            <app-expansion-component [title]="'Administrator'"></app-expansion-component>
+        </div>
+    </div>
+</div>
