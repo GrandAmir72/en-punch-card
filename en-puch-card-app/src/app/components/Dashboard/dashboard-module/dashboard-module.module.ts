@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardModuleRoutingModule } from './dashboard-module-routing.module';
 import { DashboardComponent } from '../dashboard/dashboard.component';
-import { MainDashboardComponent } from '../main-dashboard/main-dashboard.component';
+import { MainDashboardComponent } from '../widget-dashboard/main-dashboard.component';
 import { NavbarComponent } from '../../Navbar/navbar/navbar.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
