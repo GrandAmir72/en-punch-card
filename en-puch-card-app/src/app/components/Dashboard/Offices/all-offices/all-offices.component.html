@@ -1,1 +1,49 @@
-<p>all-offices works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="d-flex justify-content-between">
+            <h3>Offices</h3>
+            <button mat-raised-button>
+                <mat-icon>add_circle_outline</mat-icon>
+                New Office
+            </button>
+        </div>
+        <div class="row">
+            @for (office of offices; track $index) {
+            @if (office.isOwner) {
+            <div class="col-4 my-1">
+                <mat-card appearance="outlined" class=" pointer-cursor-card  ">
+                    <mat-card-header>
+                        <mat-card-title>{{office.name}} </mat-card-title>
+                    </mat-card-header>
+                    <mat-card-actions>
+                        <span class="badge me-3"
+                            [ngClass]="{'bg-success':office.isActive , 'bg-danger':!office.isActive}">
+                            @if (office.isActive) {
+                            <span>Active</span>
+                            } @else {
+                            <span>Deactive</span>
+                            }
+                        </span>
+                        <span class="badge me-3" [ngClass]="{'bg-primary':office.isOwner}">
+                            @if (office.isOwner) {
+                            <span>Owner</span>
+                            }
+                        </span>
+                        <span class="badge" [ngClass]="{'bg-info':office.isAdmin, 'bg-warning':!office.isAdmin}">
+                            @if (office.isAdmin) {
+                            <span>Manager</span>
+                            } @else {
+                            <span>User</span>
+
+                            }
+                        </span>
+                    </mat-card-actions>
+                </mat-card>
+            </div>
+
+            }
+            }
+        </div>
+
+    </div>
+</div>

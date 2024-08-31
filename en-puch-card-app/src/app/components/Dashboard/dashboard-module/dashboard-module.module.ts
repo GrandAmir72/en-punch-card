@@ -1,23 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { DashboardModuleRoutingModule } from './dashboard-module-routing.module';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { MainDashboardComponent } from '../widget-dashboard/main-dashboard.component';
 import { NavbarComponent } from '../../Navbar/navbar/navbar.component';
-import {MatIconModule} from '@angular/material/icon';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSelectModule} from '@angular/material/select';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSelectModule } from '@angular/material/select';
 import { SharedModuleModule } from '../../Shared/shared-module/shared-module.module';
-
+import { OfficesModuleModule } from '../Offices/offices-module/offices-module.module';
 
 @NgModule({
-  declarations: [
-    DashboardComponent,
-    MainDashboardComponent,
-    NavbarComponent
-  ],
+  declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
   imports: [
     CommonModule,
     DashboardModuleRoutingModule,
@@ -25,8 +20,8 @@ import { SharedModuleModule } from '../../Shared/shared-module/shared-module.mod
     MatMenuModule,
     MatButtonModule,
     MatSelectModule,
-    SharedModuleModule
-    
-  ]
+    SharedModuleModule,
+    OfficesModuleModule
+  ],
 })
-export class DashboardModuleModule { }
+export class DashboardModuleModule {}
