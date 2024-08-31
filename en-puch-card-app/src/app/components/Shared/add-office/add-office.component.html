@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>Add Office</h2>
+<mat-dialog-content class="d-flex align-items-center">
+  <!-- step 1  -->
+  <div [ngSwitch]="currentStep" class="w-100">
+    <div *ngSwitchCase="1">
+      <div class="pt-2">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Office Name</mat-label>
+          <input matInput placeholder="Office Name">
+          <mat-hint>Enter the name of the office here. All office members see this name</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div *ngSwitchCase="2">
+      <div class="pt-2">
+        <mat-form-field class="w-100">
+          <mat-label>Choose an option</mat-label>
+          <mat-select>
+            <mat-option value="option1">Option 1</mat-option>
+            <mat-option value="option2">Option 2</mat-option>
+            <mat-option value="option3">Option 3</mat-option>
+          </mat-select>
+          <mat-hint>What is the scope of your business? Please choose one from the list so that we can provide you
+            better services in the future according to the type of your business</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div *ngSwitchCase="3">
+      <div class="pt-2">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Office Nickname</mat-label>
+          <input matInput placeholder="Office Nickname">
+          <mat-hint>Enter the name of the office where the people of this office work. Later, you can add to the list of
+            office locations. This field is not mandatory, but if you want to have traffic control (digital fence), you
+            need it</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div *ngSwitchCase="4">
+      <div class="pt-2">
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Day of usage</mat-label>
+          <input matInput placeholder="1-31..">
+          <mat-hint>Enter the number of days you want to use this office together with your colleagues. You must have
+            already bought a charge and you can enter the amount of the same day or less here (for example, 30 means 30
+            days).</mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div *ngSwitchDefault>output2</div>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <mat-progress-bar class="mb-3" mode="determinate" value="{{progressBar}}"></mat-progress-bar>
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button (click)="preStep(currentStep)" *ngIf="currentStep >1">Previous</button>
+  <button mat-button (click)="nextStep(currentStep)" *ngIf="currentStep < 4">Next</button>
+  <button mat-button (click)="nextStep(currentStep)" *ngIf="currentStep === 4">Finish</button>
+</mat-dialog-actions>
