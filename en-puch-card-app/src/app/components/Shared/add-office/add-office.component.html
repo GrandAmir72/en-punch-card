@@ -1,4 +1,6 @@
 <h2 mat-dialog-title>Add Office</h2>
+<mat-progress-bar  mode="determinate" value="{{progressBar}}"></mat-progress-bar>
+
 <mat-dialog-content class="d-flex align-items-center">
   <!-- step 1  -->
   <div [ngSwitch]="currentStep" class="w-100">
@@ -51,7 +53,6 @@
   </div>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
-  <mat-progress-bar class="mb-3" mode="determinate" value="{{progressBar}}"></mat-progress-bar>
   <button mat-button mat-dialog-close>Cancel</button>
   <button mat-button (click)="preStep(currentStep)" *ngIf="currentStep >1">Previous</button>
   <button mat-button (click)="nextStep(currentStep)" *ngIf="currentStep < 4">Next</button>
