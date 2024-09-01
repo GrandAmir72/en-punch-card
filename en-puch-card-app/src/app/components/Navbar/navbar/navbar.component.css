@@ -4,3 +4,13 @@
 .set-alternative-justify {
     justify-content:space-evenly !important;
 }
+.active-button {
+    background-color: #3f51b5; /* Example: Primary color */
+    color: white !important;
+    border-color: #3f51b5;
+  }
+  
+  /* To ensure that the button retains its stroked appearance, you might also want to style the border */
+  .active-button.mat-stroked-button {
+    border: 2px solid #3f51b5;
+  }

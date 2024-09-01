@@ -11,14 +11,15 @@
             <button mat-menu-item>Add New</button>
         </mat-menu>
         <div class="set-alternative-justify collapse navbar-collapse" id="navbarSupportedContent">
-            <button class="border-0" mat-stroked-button>Offices</button>
-            <button class="border-0" mat-stroked-button>Reports</button>
-            <button class="border-0" mat-stroked-button>Attendance</button>
-            <button class="border-0" mat-stroked-button>Setting</button>
-            <button class="border-0" mat-stroked-button>Cartable</button>
-            <button class="border-0" mat-stroked-button>Leave</button>
-            <button class="border-0" mat-stroked-button>Mission</button>
-            <mat-form-field  appearance="outline">
+            <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/offices/all']"
+                routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Offices</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Reports</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Attendance</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Setting</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Cartable</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Leave</button>
+            <button class="border-0" mat-stroked-button routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Mission</button>
+            <mat-form-field appearance="outline">
                 <mat-label>Current Office</mat-label>
                 <mat-select>
                     <mat-option [value]="'main'">Main</mat-option>
