@@ -7,6 +7,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { AuthModuleModule } from './components/auth/auth-module/auth-module.module';
 import { LandingComponent } from './components/landing/landing.component';
 import { DashboardModuleModule } from './components/Dashboard/dashboard-module/dashboard-module.module';
+import { SharedModuleModule } from './components/Shared/shared-module/shared-module.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,8 @@ import { DashboardModuleModule } from './components/Dashboard/dashboard-module/d
     BrowserModule,
     AppRoutingModule,
     AuthModuleModule,
-    DashboardModuleModule
+    DashboardModuleModule,
+    SharedModuleModule
   ],
   providers: [
     provideClientHydration(),

@@ -21,7 +21,7 @@ import { OfficePageComponent } from '../office-page/office-page.component';
     MatButtonModule,
     MatBadgeModule,
     MatIconModule,
-    OfficesModuleRoutingModule
+    OfficesModuleRoutingModule,
   ]
 })
 export class OfficesModuleModule { }

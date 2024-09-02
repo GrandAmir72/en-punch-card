@@ -4,8 +4,8 @@ import { AllOfficesComponent } from '../all-offices/all-offices.component';
 import { OfficePageComponent } from '../office-page/office-page.component';
 
 const routes: Routes = [
-  {path:'all',component:AllOfficesComponent},
-  {path:'office/:id',component:OfficePageComponent},
+  {path:'all',component:AllOfficesComponent,data: { breadcrumb: 'offices' }},
+  {path:'office/:id',component:OfficePageComponent,data: { breadcrumb: 'office' }},
 ];
 
 @NgModule({

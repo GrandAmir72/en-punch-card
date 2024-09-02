@@ -6,15 +6,17 @@ import { MatIconModule } from '@angular/material/icon';
 import { AddOfficeComponent } from '../add-office/add-office.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSelectModule} from '@angular/material/select';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-
-
-
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { BreadcrumbComponent } from '../breadcrumb/breadcrumb.component';
 @NgModule({
-  declarations: [ExpansionComponentComponent, AddOfficeComponent],
+  declarations: [
+    ExpansionComponentComponent,
+    AddOfficeComponent,
+    BreadcrumbComponent,
+  ],
   imports: [
     CommonModule,
     MatExpansionModule,
@@ -24,8 +26,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatInputModule,
     MatSelectModule,
     MatProgressBarModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+  
   ],
-  exports: [ExpansionComponentComponent, AddOfficeComponent],
+  exports: [ExpansionComponentComponent, AddOfficeComponent,BreadcrumbComponent],
 })
 export class SharedModuleModule {}
