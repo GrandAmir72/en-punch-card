@@ -4,9 +4,17 @@
             <h2>Main </h2>
         </div>
         <div class="col-8">
-            <button class="float-end" mat-raised-button>
+            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
                 <mat-icon>add_circle_outline</mat-icon>
                 Add Attendance
+            </button>
+            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                <mat-icon>card_travel</mat-icon>
+                Add Mission
+            </button>
+            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                <mat-icon>free_breakfast</mat-icon>
+                Add Leave
             </button>
         </div>
     </div>

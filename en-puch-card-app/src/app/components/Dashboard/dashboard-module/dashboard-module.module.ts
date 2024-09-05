@@ -12,6 +12,7 @@ import { SharedModuleModule } from '../../Shared/shared-module/shared-module.mod
 import { OfficesModuleModule } from '../Offices/offices-module/offices-module.module';
 import { AttendanceModuleModule } from '../Attendance/attendance-module/attendance-module.module';
 import { ReportModuleModule } from '../Reports/report-module/report-module.module';
+import { CartableModule } from '../Cartable/cartable-module/cartable.module';
 
 @NgModule({
   declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
@@ -25,6 +26,7 @@ import { ReportModuleModule } from '../Reports/report-module/report-module.modul
     SharedModuleModule,
     AttendanceModuleModule,
     ReportModuleModule,
+    CartableModule,
     OfficesModuleModule
   ],
 })

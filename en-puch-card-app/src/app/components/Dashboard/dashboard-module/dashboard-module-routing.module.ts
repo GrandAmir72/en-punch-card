@@ -31,6 +31,13 @@ const routes: Routes = [
             (m) => m.ReportModuleModule
           ),
       },
+      {
+        path: 'cartable',
+        loadChildren: () =>
+          import('../Cartable/cartable-module/cartable.module').then(
+            (m) => m.CartableModule
+          ),
+      },
     ],
   },
 ];

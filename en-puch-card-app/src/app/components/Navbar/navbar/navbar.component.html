@@ -7,8 +7,8 @@
         <mat-icon class="w-auto h-auto display-5 pointer-cursor-header"
             [matMenuTriggerFor]="profile">account_circle</mat-icon>
         <mat-menu #profile="matMenu">
-            <button mat-menu-item>Management</button>
-            <button mat-menu-item>Add New</button>
+            <button mat-menu-item>Profile</button>
+            <button mat-menu-item>Logout</button>
         </mat-menu>
         <div class="set-alternative-justify collapse navbar-collapse" id="navbarSupportedContent">
             <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/offices/all']"
@@ -17,26 +17,23 @@
                 [routerLinkActiveOptions]="{ exact: true }">Reports</button>
             <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/attendance/setAttendance']"
                 routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Attendance</button>
-            <button class="border-0" mat-stroked-button routerLinkActive="active-button"
-                [routerLinkActiveOptions]="{ exact: true }">Setting</button>
-            <button class="border-0" mat-stroked-button routerLinkActive="active-button"
+            <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/cartable/all']" routerLinkActive="active-button"
                 [routerLinkActiveOptions]="{ exact: true }">Cartable</button>
-            <button class="border-0" mat-stroked-button routerLinkActive="active-button"
+            <!-- <button class="border-0" mat-stroked-button routerLinkActive="active-button"
                 [routerLinkActiveOptions]="{ exact: true }">Leave</button>
             <button class="border-0" mat-stroked-button routerLinkActive="active-button"
-                [routerLinkActiveOptions]="{ exact: true }">Mission</button>
+                [routerLinkActiveOptions]="{ exact: true }">Mission</button> -->
             <mat-form-field appearance="outline">
                 <mat-label>Current Office</mat-label>
                 <mat-select>
                     <mat-option [value]="'main'">Main</mat-option>
                 </mat-select>
             </mat-form-field>
+            <!-- <button  class="border-0" mat-stroked-button>
+                <mat-icon>notifications</mat-icon>
+            </button> -->
         </div>
         <img class="pointer-cursor-header" src="assets\img\punch-card-logo.png" alt="punch-super-widget" srcset=""
-            height="40" width="40" [matMenuTriggerFor]="superWidget">
-        <mat-menu #superWidget="matMenu">
-            <button mat-menu-item>Management</button>
-            <button mat-menu-item>Add New</button>
-        </mat-menu>
+            height="40" width="40" [routerLink]="['/dashboard']">
     </div>
 </nav>
