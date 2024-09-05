@@ -24,6 +24,13 @@ const routes: Routes = [
             (m) => m.AttendanceModuleModule
           ),
       },
+      {
+        path: 'reports',
+        loadChildren: () =>
+          import('../Reports/report-module/report-module.module').then(
+            (m) => m.ReportModuleModule
+          ),
+      },
     ],
   },
 ];
