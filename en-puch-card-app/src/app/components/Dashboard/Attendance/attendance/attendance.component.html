@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-6">
+        <h2>Main</h2>
+        <span>Map</span>
+    </div>
+    <div class="col-6">
+        <p>Date of attendance</p>
+        <div class="alert alert-info">
+            {{dateAttendance}}
+        </div>
+        <p>Time of attendance</p>
+        <div class="alert alert-warning">
+            {{timeAttendance}}
+        </div>
+        <p>where are you working today?</p>
+        <mat-form-field class="w-100" appearance="outline">
+            <mat-label>Choose an option</mat-label>
+            <mat-select>
+                <mat-option value="option1">Option 1</mat-option>
+                <mat-option value="option2">Option 2 (disabled)</mat-option>
+                <mat-option value="option3">Option 3</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <p>What do you want to do today please?</p>
+        <textarea class="form-control" rows="5"></textarea>
+        <p>How did you start today? how are you?</p>
+        <div class="d-flex justify-content-evenly">
+            @for (emojie of emojies; track $index) {
+                <button class="btn">
+                    <img src="assets\img\{{emojie}}.png" alt="" srcset="" width="25px" height="25px">
+                </button>
+            }
+        </div>
+
+    </div>
+</div>

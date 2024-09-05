@@ -10,6 +10,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSelectModule } from '@angular/material/select';
 import { SharedModuleModule } from '../../Shared/shared-module/shared-module.module';
 import { OfficesModuleModule } from '../Offices/offices-module/offices-module.module';
+import { AttendanceModuleModule } from '../Attendance/attendance-module/attendance-module.module';
 
 @NgModule({
   declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
@@ -21,6 +22,7 @@ import { OfficesModuleModule } from '../Offices/offices-module/offices-module.mo
     MatButtonModule,
     MatSelectModule,
     SharedModuleModule,
+    AttendanceModuleModule,
     OfficesModuleModule
   ],
 })
