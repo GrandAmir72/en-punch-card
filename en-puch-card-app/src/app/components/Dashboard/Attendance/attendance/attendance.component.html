@@ -1,29 +1,29 @@
 <div class="row">
-    <div class="col-6">
+    <div class="col">
         <h2>Main</h2>
         <span>Map</span>
     </div>
-    <div class="col-6">
-        <p>Date of attendance</p>
+    <div class="col">
+        <h6>Date of attendance</h6>
         <div class="alert alert-info">
             {{dateAttendance}}
         </div>
-        <p>Time of attendance</p>
+        <h6>Time of attendance</h6>
         <div class="alert alert-warning">
             {{timeAttendance}}
         </div>
-        <p>where are you working today?</p>
+        <h6>Where are you working today?</h6>
         <mat-form-field class="w-100" appearance="outline">
             <mat-label>Choose an option</mat-label>
             <mat-select>
                 <mat-option value="option1">Option 1</mat-option>
-                <mat-option value="option2">Option 2 (disabled)</mat-option>
+                <mat-option value="option2">Option 2</mat-option>
                 <mat-option value="option3">Option 3</mat-option>
             </mat-select>
         </mat-form-field>
-        <p>What do you want to do today please?</p>
-        <textarea class="form-control" rows="5"></textarea>
-        <p>How did you start today? how are you?</p>
+        <h6>What do you want to do today please?</h6>
+        <textarea class="form-control my-2" rows="5"></textarea>
+        <h6>How did you start today? how are you?</h6>
         <div class="d-flex justify-content-evenly">
             @for (emojie of emojies; track $index) {
                 <button class="btn">

@@ -10,8 +10,7 @@ export class AttendanceComponent implements OnInit {
   emojies = ['1','2','3','4','5','6'];
   ngOnInit(): void {
     let date = new Date();
-    this.dateAttendance =
-      date.getFullYear() + '/' + date.getMonth() + '/' + date.getDay();
+    this.dateAttendance = date.getFullYear()+'/'+date.getDay()+'/'+date.getMonth()
     let hours = date.getHours();
     let minutes = date.getMinutes();
     let stringMin;
