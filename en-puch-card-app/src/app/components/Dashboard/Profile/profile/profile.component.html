@@ -1,14 +1,50 @@
 <div class="row my-2">
-    <app-expansion-component [title]="'User Profile'"></app-expansion-component>
+    <mat-accordion >
+        <mat-expansion-panel expanded="true">
+            <mat-expansion-panel-header>
+                <mat-panel-title> User Profile </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
 </div>
 <div class="row my-2">
-    <app-expansion-component [title]="'My Invitations'"></app-expansion-component>
+    <mat-accordion>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title> My Invitations </mat-panel-title>
+            </mat-expansion-panel-header>
+            <div class="row">
+
+            </div>
+        </mat-expansion-panel>
+    </mat-accordion>
 </div>
 <div class="row my-2">
     <div class="col-6">
-        <app-expansion-component [title]="'Payment'"></app-expansion-component>
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title> Payments </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="row">
+
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
     </div>
     <div class="col-6">
-        <app-expansion-component [title]="'Connection'"></app-expansion-component>
+        <mat-accordion>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+                    <mat-panel-title> Connections </mat-panel-title>
+                </mat-expansion-panel-header>
+                <div class="row">
+
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
     </div>
 </div>

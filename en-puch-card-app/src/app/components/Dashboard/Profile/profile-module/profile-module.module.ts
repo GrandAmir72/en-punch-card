@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { ProfileModuleRoutingModule } from './profile-module-routing.module';
 import { ProfileComponent } from '../profile/profile.component';
-import { SharedModuleModule } from "../../../Shared/shared-module/shared-module.module";
+import { MatExpansionModule } from '@angular/material/expansion';
 
 
 @NgModule({
@@ -12,8 +12,7 @@ import { SharedModuleModule } from "../../../Shared/shared-module/shared-module.
   ],
   imports: [
     CommonModule,
-    ProfileModuleRoutingModule,
-    SharedModuleModule
-]
+    MatExpansionModule,
+    ProfileModuleRoutingModule,]
 })
 export class ProfileModuleModule { }
