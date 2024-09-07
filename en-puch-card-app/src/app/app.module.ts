@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import {
+  BrowserModule,
+  provideClientHydration,
+} from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,21 +12,15 @@ import { LandingComponent } from './components/landing/landing.component';
 import { DashboardModuleModule } from './components/Dashboard/dashboard-module/dashboard-module.module';
 import { SharedModuleModule } from './components/Shared/shared-module/shared-module.module';
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingComponent,
-   ],
+  declarations: [AppComponent, LandingComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModuleModule,
     DashboardModuleModule,
-    SharedModuleModule
+    SharedModuleModule,
   ],
-  providers: [
-    provideClientHydration(),
-    provideAnimationsAsync()
-  ],
-  bootstrap: [AppComponent]
+  providers: [provideClientHydration(), provideAnimationsAsync()],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
