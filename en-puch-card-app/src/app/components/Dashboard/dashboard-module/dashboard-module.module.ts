@@ -13,6 +13,7 @@ import { OfficesModuleModule } from '../Offices/offices-module/offices-module.mo
 import { AttendanceModuleModule } from '../Attendance/attendance-module/attendance-module.module';
 import { ReportModuleModule } from '../Reports/report-module/report-module.module';
 import { CartableModule } from '../Cartable/cartable-module/cartable.module';
+import { ProfileModuleModule } from '../Profile/profile-module/profile-module.module';
 
 @NgModule({
   declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
@@ -27,6 +28,7 @@ import { CartableModule } from '../Cartable/cartable-module/cartable.module';
     AttendanceModuleModule,
     ReportModuleModule,
     CartableModule,
+    ProfileModuleModule,
     OfficesModuleModule
   ],
 })

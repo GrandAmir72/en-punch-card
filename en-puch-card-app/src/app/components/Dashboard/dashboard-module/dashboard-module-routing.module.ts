@@ -38,6 +38,13 @@ const routes: Routes = [
             (m) => m.CartableModule
           ),
       },
+      {
+        path: 'profile',
+        loadChildren: () =>
+          import('../Profile/profile-module/profile-module.module').then(
+            (m) => m.ProfileModuleModule
+          ),
+      },
     ],
   },
 ];

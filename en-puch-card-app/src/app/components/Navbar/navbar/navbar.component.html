@@ -7,7 +7,7 @@
         <mat-icon class="w-auto h-auto display-5 pointer-cursor-header"
             [matMenuTriggerFor]="profile">account_circle</mat-icon>
         <mat-menu #profile="matMenu">
-            <button mat-menu-item>Profile</button>
+            <button mat-menu-item [routerLink]="['/dashboard/profile']" >Profile</button>
             <button mat-menu-item>Logout</button>
         </mat-menu>
         <div class="set-alternative-justify collapse navbar-collapse" id="navbarSupportedContent">
