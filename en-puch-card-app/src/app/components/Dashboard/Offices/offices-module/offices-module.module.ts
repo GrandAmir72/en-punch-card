@@ -4,6 +4,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -22,7 +25,7 @@ import { AttendanceSummaryComponent } from '../attendance-summary/attendance-sum
     EmployeeManagmentComponent,
     OfficeManagmentComponent,
     AttendanceManagmentComponent,
-    AttendanceSummaryComponent
+    AttendanceSummaryComponent,
   ],
   imports: [
     CommonModule,
@@ -30,6 +33,9 @@ import { AttendanceSummaryComponent } from '../attendance-summary/attendance-sum
     MatButtonModule,
     MatBadgeModule,
     MatIconModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatInputModule,
     OfficesModuleRoutingModule,
   ],
 })
