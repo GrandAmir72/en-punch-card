@@ -6,6 +6,7 @@ import { WorkplaceComponent } from '../workplace/workplace.component';
 import { EmployeeManagmentComponent } from '../employee-managment/employee-managment.component';
 import { OfficeManagmentComponent } from '../office-managment/office-managment.component';
 import { AttendanceManagmentComponent } from '../attendance-managment/attendance-managment.component';
+import { AttendanceSummaryComponent } from '../attendance-summary/attendance-summary.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'employee', component: EmployeeManagmentComponent },
   { path: 'setting', component: OfficeManagmentComponent },
   { path: 'attendance-managment', component: AttendanceManagmentComponent },
+  { path: 'attendance-summary', component: AttendanceSummaryComponent },
 ];
 
 @NgModule({
