@@ -6,7 +6,7 @@
             <input matInput placeholder="Workplace...">
             <mat-icon matSuffix>search</mat-icon>
         </mat-form-field>
-        <button class="float-end my-2" mat-raised-button> <mat-icon>add</mat-icon> Add new Place</button>
+        <button class="float-end my-2" mat-raised-button (click)="openDialog()"> <mat-icon>add</mat-icon> Add new Place</button>
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
             <!--- Note that these columns can be defined in any order.

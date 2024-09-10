@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogNewWorkplaceComponent } from './dialog-new-workplace/dialog-new-workplace.component';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -26,4 +28,13 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class WorkplaceComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  readonly dialog = inject(MatDialog);
+
+  openDialog() {    
+    this.dialog.open(DialogNewWorkplaceComponent,{
+      height: '400px',
+      width: '600px',
+    });
+
+  }
 }
