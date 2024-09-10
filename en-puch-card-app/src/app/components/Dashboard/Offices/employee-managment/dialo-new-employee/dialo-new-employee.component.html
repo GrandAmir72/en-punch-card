@@ -1,0 +1,30 @@
+<h3 mat-dialog-title class="m-0">Send Invitaion New Employee</h3>
+<p class="text-success p-3 text-5">
+    <small> An invitation email will be sent to your staff, which they must confirm or after entering their user panel, enter
+        their user profile and confirm their membership in the office.</small>
+</p>
+<mat-dialog-content class="p-3">
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Employee Email</mat-label>
+        <input matInput placeholder="Employee Email">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Employee Name</mat-label>
+        <input matInput placeholder="Employee Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Employee Phonenumber</mat-label>
+        <input matInput placeholder="Employee Phonenumber">
+    </mat-form-field>
+    <section>
+        <mat-checkbox>Also Create an account </mat-checkbox>
+    </section>
+    <span class="text-danger">
+        <span>By checking the above tick, this user's account will be created at the same time and there is no need to
+            create an account by herself.</span>
+    </span>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close>Close</button>
+    <button mat-flat-button>Save</button>
+</mat-dialog-actions>

@@ -31,7 +31,7 @@ export class EmployeeManagmentComponent {
   readonly dialog = inject(MatDialog);
   openDialog() {    
     this.dialog.open(DialoNewEmployeeComponent,{
-      height: '400px',
+      height: '600px',
       width: '600px',
     });
 
