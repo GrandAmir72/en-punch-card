@@ -19,6 +19,7 @@ import { OfficeManagmentComponent } from '../office-managment/office-managment.c
 import { AttendanceManagmentComponent } from '../attendance-managment/attendance-managment.component';
 import { AttendanceSummaryComponent } from '../attendance-summary/attendance-summary.component';
 import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/dialog-new-workplace.component';
+import { DialoNewEmployeeComponent } from '../employee-managment/dialo-new-employee/dialo-new-employee.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/d
     AttendanceManagmentComponent,
     AttendanceSummaryComponent,
     DialogNewWorkplaceComponent,
+    DialoNewEmployeeComponent
   ],
   imports: [
     CommonModule,
