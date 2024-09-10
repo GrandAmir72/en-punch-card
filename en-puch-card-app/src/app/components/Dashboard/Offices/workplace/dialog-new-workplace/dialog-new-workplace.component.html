@@ -1,1 +1,19 @@
-<p>dialog-new-workplace works!</p>
+<h3 mat-dialog-title>Add New workplace</h3>
+<mat-dialog-content class="p-3">
+    <mat-form-field appearance="outline" class="w-100">
+        <mat-label>Workplace Name</mat-label>
+        <input matInput placeholder="Workplace Name">
+    </mat-form-field>
+    <section>
+        <mat-checkbox>The place of service is short-term (three days) and expires after 3 days</mat-checkbox>
+    </section>
+    <span class="text-danger">
+        <span>Note: It is not possible to delete the service location, but you can edit it later</span>
+        <br>
+        <span> Note: Changing the service name is only possible up to 48 hours after definition</span>
+    </span>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close>Close</button>
+    <button mat-flat-button>Save</button>
+</mat-dialog-actions>

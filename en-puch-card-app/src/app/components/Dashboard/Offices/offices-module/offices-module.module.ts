@@ -7,6 +7,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -27,7 +29,7 @@ import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/d
     OfficeManagmentComponent,
     AttendanceManagmentComponent,
     AttendanceSummaryComponent,
-    DialogNewWorkplaceComponent
+    DialogNewWorkplaceComponent,
   ],
   imports: [
     CommonModule,
@@ -36,8 +38,10 @@ import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/d
     MatBadgeModule,
     MatIconModule,
     MatTableModule,
+    MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCheckboxModule,
     OfficesModuleRoutingModule,
   ],
 })
