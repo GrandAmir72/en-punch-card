@@ -1,6 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialogAddShiftComponent } from '../dialog-add-shift/dialog-add-shift.component';
+import { DialogEditShiftComponent } from '../dialog-edit-shift/dialog-edit-shift.component';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -26,6 +27,13 @@ export class SpecialAttendanceSettingComponent {
   openDialog() {    
     this.dialog.open(DialogAddShiftComponent,{
       height: '200px',
+      width: '600px',
+    });
+
+  }
+  editDialog() {    
+    this.dialog.open(DialogEditShiftComponent,{
+      height: '900px',
       width: '600px',
     });
 
