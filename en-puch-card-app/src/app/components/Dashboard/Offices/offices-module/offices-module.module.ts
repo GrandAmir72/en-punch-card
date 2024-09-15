@@ -11,6 +11,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
+import {MatStepperModule} from '@angular/material/stepper';
 
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
@@ -58,6 +59,7 @@ import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-sh
     MatCheckboxModule,
     MatTabsModule,
     MatSelectModule,
+    MatStepperModule,
     OfficesModuleRoutingModule,
   ],
 })
