@@ -1,0 +1,20 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 my-2">
+            <button mat-raised-button class="w-100 my-2">Add Shift <mat-icon>add</mat-icon></button>
+            <div class="bg-info p-3">
+                <ul class="pt-3">
+                    <li>Work shifts for more than 24 hours are currently not supported (check-in and check-out hours
+                        should only be recorded in one day)</li>
+                    <li>The buoyancy field is from the beginning and the end to the minute to manage the overall
+                        buoyancy. (For example, if you set this float to 60 minutes and your staff enters the workplace
+                        after 40 minutes, 40 minutes will be automatically added to the departure time during the
+                        calculations so that the delay is not recorded for the user, and also overtime up to 40 minutes
+                        are not considered, but if there is a delay of more than 60 minutes, it is considered as normal
+                        and will be delayed)</li>
+                    <li>You can define up to 25 work shifts.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

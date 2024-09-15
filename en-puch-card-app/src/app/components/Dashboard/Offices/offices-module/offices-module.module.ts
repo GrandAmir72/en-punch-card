@@ -9,6 +9,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from '@angular/material/select';
+
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -20,6 +23,9 @@ import { AttendanceManagmentComponent } from '../attendance-managment/attendance
 import { AttendanceSummaryComponent } from '../attendance-summary/attendance-summary.component';
 import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/dialog-new-workplace.component';
 import { DialoNewEmployeeComponent } from '../employee-managment/dialo-new-employee/dialo-new-employee.component';
+import { GeneralAttendanceSettingComponent } from '../attendance-managment/general-attendance-setting/general-attendance-setting.component';
+import { SpecialAttendanceSettingComponent } from '../attendance-managment/special-attendance-setting/special-attendance-setting.component';
+
 
 @NgModule({
   declarations: [
@@ -31,7 +37,9 @@ import { DialoNewEmployeeComponent } from '../employee-managment/dialo-new-emplo
     AttendanceManagmentComponent,
     AttendanceSummaryComponent,
     DialogNewWorkplaceComponent,
-    DialoNewEmployeeComponent
+    DialoNewEmployeeComponent,
+    GeneralAttendanceSettingComponent,
+    SpecialAttendanceSettingComponent
   ],
   imports: [
     CommonModule,
@@ -44,6 +52,8 @@ import { DialoNewEmployeeComponent } from '../employee-managment/dialo-new-emplo
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
+    MatTabsModule,
+    MatSelectModule,
     OfficesModuleRoutingModule,
   ],
 })
