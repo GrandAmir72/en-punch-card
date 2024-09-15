@@ -25,6 +25,8 @@ import { DialogNewWorkplaceComponent } from '../workplace/dialog-new-workplace/d
 import { DialoNewEmployeeComponent } from '../employee-managment/dialo-new-employee/dialo-new-employee.component';
 import { GeneralAttendanceSettingComponent } from '../attendance-managment/general-attendance-setting/general-attendance-setting.component';
 import { SpecialAttendanceSettingComponent } from '../attendance-managment/special-attendance-setting/special-attendance-setting.component';
+import { DialogAddShiftComponent } from '../attendance-managment/dialog-add-shift/dialog-add-shift.component';
+import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-shift/dialog-edit-shift.component';
 
 
 @NgModule({
@@ -39,7 +41,9 @@ import { SpecialAttendanceSettingComponent } from '../attendance-managment/speci
     DialogNewWorkplaceComponent,
     DialoNewEmployeeComponent,
     GeneralAttendanceSettingComponent,
-    SpecialAttendanceSettingComponent
+    SpecialAttendanceSettingComponent,
+    DialogAddShiftComponent,
+    DialogEditShiftComponent
   ],
   imports: [
     CommonModule,
