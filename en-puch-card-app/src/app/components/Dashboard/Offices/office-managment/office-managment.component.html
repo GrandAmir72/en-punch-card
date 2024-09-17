@@ -2,20 +2,315 @@
     <div class="row">
         <div class="col-12">
             <mat-stepper [linear]="true" #stepper>
-                <mat-step label="Fill out your address" >
-                    <p>1</p>
+                <mat-step label="Basic office settings">
+                    <div class="row py-2">
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>Economic code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Economic code</mat-label>
+                                <input matInput placeholder="Economic code">
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>Registration number</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Registration number</mat-label>
+                                <input matInput placeholder="Registration number">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col">
+                            <p>Date of registration of the office</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Date of registration of the office</mat-label>
+                                <input matInput value="2023-01-01" disabled>
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>Full title of the office/company</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Full title of the office/company</mat-label>
+                                <input matInput placeholder="Full title of the office/company">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col">
+                            <p>Type of business</p>
+                            <mat-form-field class="w-100">
+                                <mat-label>Choose an option</mat-label>
+                                <mat-select>
+                                    <mat-option value="option1">Option 1</mat-option>
+                                    <mat-option value="option2">Option 2</mat-option>
+                                    <mat-option value="option3">Option 3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>Website Address</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>Website Address</mat-label>
+                                <input matInput placeholder="https://....">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row py-2">
+                        <div class="col">
+                            <p>Description of office</p>
+                            <textarea class="form-control my-2" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col">
+                            <button mat-button>Save</button>
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </mat-step>
-                <mat-step label="Fill out your address">
-                    <p>2</p>
+                <mat-step label="Notification and general">
+                    <div class="row py-1">
+                        <div class="col">
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <mat-form-field class="example-chip-list w-100">
+                                    <mat-label>Favorite Fruits</mat-label>
+                                    <mat-chip-grid #chipGrid aria-label="Fruit selection">
+                                        @for (fruit of fruits(); track $index) {
+                                        <mat-chip-row (removed)="remove(fruit)">
+                                            {{fruit}}
+                                            <button matChipRemove [attr.aria-label]="'remove ' + fruit">
+                                                <mat-icon>cancel</mat-icon>
+                                            </button>
+                                        </mat-chip-row>
+                                        }
+                                    </mat-chip-grid>
+                                    <input name="currentFruit" placeholder="New Fruit..." #fruitInput
+                                        [(ngModel)]="currentFruit" [matChipInputFor]="chipGrid" [matAutocomplete]="auto"
+                                        [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+                                        (matChipInputTokenEnd)="add($event)" />
+                                    <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
+                                        @for (fruit of filteredFruits(); track fruit) {
+                                        <mat-option [value]="fruit">{{fruit}}</mat-option>
+                                        }
+                                    </mat-autocomplete>
+                                </mat-form-field>
+                            </form>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col">
+                            <button mat-button>Save</button>
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button mat-button matStepperPrevious>Previous</button>
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </mat-step>
-                <mat-step label="Fill out your address">
-                    <p>3</p>
+                <mat-step label="Advanced settings">
+                    <div class="row py-1">
+                        <div class="col">
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row-py-1">
+                        <div class="col">
+                            <p>Type of business</p>
+                            <mat-form-field class="w-100">
+                                <mat-label>Choose an option</mat-label>
+                                <mat-select>
+                                    <mat-option value="option1">Option 1</mat-option>
+                                    <mat-option value="option2">Option 2</mat-option>
+                                    <mat-option value="option3">Option 3</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col">
+                            <button mat-button>Save</button>
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button mat-button matStepperPrevious>Previous</button>
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </mat-step>
-                <mat-step label="Fill out your address">
-                    <p>4</p>
+                <mat-step label="Insurance and taxes">
+                    <div class="row py-1">
+                        <div class="col">
+                            <section>
+                                <mat-checkbox>Also Create an account </mat-checkbox>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                        <div class="col">
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                            <p>National ID of the company / national code</p>
+                            <mat-form-field appearance="outline" class="w-100">
+                                <mat-label>National ID of the company / national code</mat-label>
+                                <input matInput placeholder="National ID of the company...">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <div class="row py-1">
+                        <div class="col">
+                            <button mat-button>Save</button>
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button mat-button matStepperPrevious>Previous</button>
+                                <button mat-button matStepperNext>Next</button>
+                            </div>
+                        </div>
+                    </div>
                 </mat-step>
-                <mat-step label="Fill out your address">
+                <mat-step label="Dynamic form builder">
                     <p>5</p>
+                    <div class="row py-1">
+                        <div class="col">
+                            <button mat-button>Save</button>
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button mat-button matStepperPrevious>Previous</button>
+                            </div>
+                        </div>
+                    </div>
                 </mat-step>
             </mat-stepper>
         </div>

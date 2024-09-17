@@ -12,7 +12,9 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatSelectModule} from '@angular/material/select';
 import {MatStepperModule} from '@angular/material/stepper';
-
+import {MatChipsModule} from '@angular/material/chips';
+import {FormsModule} from '@angular/forms';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -48,6 +50,7 @@ import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-sh
   ],
   imports: [
     CommonModule,
+    FormsModule,
     MatCardModule,
     MatButtonModule,
     MatBadgeModule,
@@ -60,6 +63,8 @@ import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-sh
     MatTabsModule,
     MatSelectModule,
     MatStepperModule,
+    MatChipsModule,
+    MatAutocompleteModule,
     OfficesModuleRoutingModule,
   ],
 })
