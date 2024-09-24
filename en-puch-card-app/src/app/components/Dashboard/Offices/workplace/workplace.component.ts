@@ -30,7 +30,7 @@ export class WorkplaceComponent {
   }
   editWorkplaceDialog(id:string) {    
     this.dialog.open(DialogEditWorkplaceComponent,{
-      height: '400px',
+      height: '700px',
       width: '600px',
       data:{
         workplaceId:id,

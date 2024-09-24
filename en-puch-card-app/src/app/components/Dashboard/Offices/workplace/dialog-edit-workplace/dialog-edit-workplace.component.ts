@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrl: './dialog-edit-workplace.component.css'
 })
 export class DialogEditWorkplaceComponent {
+  showTheMap:boolean = false;
+  showTheLatLong:boolean = false;
 
+  limitLocation(e:any){
+    this.showTheMap = e.checked;    
+  }
+  latLongtitudeToggle(e:any){
+    this.showTheLatLong = e.checked;    
+    
+  } 
 }

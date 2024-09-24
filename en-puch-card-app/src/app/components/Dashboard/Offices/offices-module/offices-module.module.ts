@@ -31,6 +31,7 @@ import { SpecialAttendanceSettingComponent } from '../attendance-managment/speci
 import { DialogAddShiftComponent } from '../attendance-managment/dialog-add-shift/dialog-add-shift.component';
 import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-shift/dialog-edit-shift.component';
 import { DialogEditWorkplaceComponent } from '../workplace/dialog-edit-workplace/dialog-edit-workplace.component';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 
 @NgModule({
@@ -59,6 +60,7 @@ import { DialogEditWorkplaceComponent } from '../workplace/dialog-edit-workplace
     MatIconModule,
     MatTableModule,
     MatDialogModule,
+    MatSlideToggleModule,
     MatFormFieldModule,
     MatInputModule,
     MatCheckboxModule,
