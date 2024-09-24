@@ -30,6 +30,7 @@ import { GeneralAttendanceSettingComponent } from '../attendance-managment/gener
 import { SpecialAttendanceSettingComponent } from '../attendance-managment/special-attendance-setting/special-attendance-setting.component';
 import { DialogAddShiftComponent } from '../attendance-managment/dialog-add-shift/dialog-add-shift.component';
 import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-shift/dialog-edit-shift.component';
+import { DialogEditWorkplaceComponent } from '../workplace/dialog-edit-workplace/dialog-edit-workplace.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-sh
     AttendanceManagmentComponent,
     AttendanceSummaryComponent,
     DialogNewWorkplaceComponent,
+    DialogEditWorkplaceComponent,
     DialoNewEmployeeComponent,
     GeneralAttendanceSettingComponent,
     SpecialAttendanceSettingComponent,
