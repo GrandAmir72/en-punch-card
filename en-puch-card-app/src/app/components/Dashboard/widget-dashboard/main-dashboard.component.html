@@ -1,32 +1,51 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-4">
-            <h2>Main </h2>
         </div>
         <div class="col-8">
-            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
-                <mat-icon>add_circle_outline</mat-icon>
-                Add Attendance
-            </button>
-            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
-                <mat-icon>card_travel</mat-icon>
-                Add Mission
-            </button>
-            <button class="float-end mx-2" mat-raised-button [routerLink]="['/dashboard/attendance/setAttendance'] ">
-                <mat-icon>free_breakfast</mat-icon>
-                Add Leave
-            </button>
+            <div class="mt-3">
+                <button class="float-end mx-2" mat-raised-button
+                    [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                    <mat-icon>add_circle_outline</mat-icon>
+                    Add Attendance
+                </button>
+                <button class="float-end mx-2" mat-raised-button
+                    [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                    <mat-icon>card_travel</mat-icon>
+                    Add Mission
+                </button>
+                <button class="float-end mx-2" mat-raised-button
+                    [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                    <mat-icon>free_breakfast</mat-icon>
+                    Add Leave
+                </button>
+            </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-3">
         <div class="col">
-            <app-expansion-component [title]="'Offices'"></app-expansion-component>
+            <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                    <mat-card-title>NameOfOffice</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <span>
+                        <span>Date of create: <span>2020/01/01</span></span>
+                        <br>
+                        <span>Members: <span>1</span></span>
+                        <br>
+                        <span>Date of expaire: <span>2020/01/01</span></span>
+                    </span>
+                </mat-card-content>
+                <mat-card-footer class="ps-3 pt-3 pb-3 pe-3">
+                    <span>Progress: <span>50%</span></span>
+                    <mat-progress-bar mode="determinate" value="50"></mat-progress-bar>
+                </mat-card-footer>
+            </mat-card>
         </div>
         <div class="col">
-            <app-expansion-component [title]="'Reports'"></app-expansion-component>
         </div>
         <div class="col">
-            <app-expansion-component [title]="'Administrator'"></app-expansion-component>
         </div>
     </div>
 </div>

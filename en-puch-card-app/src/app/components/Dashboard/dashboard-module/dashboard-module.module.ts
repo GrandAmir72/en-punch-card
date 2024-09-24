@@ -14,6 +14,8 @@ import { AttendanceModuleModule } from '../Attendance/attendance-module/attendan
 import { ReportModuleModule } from '../Reports/report-module/report-module.module';
 import { CartableModule } from '../Cartable/cartable-module/cartable.module';
 import { ProfileModuleModule } from '../Profile/profile-module/profile-module.module';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
@@ -23,6 +25,8 @@ import { ProfileModuleModule } from '../Profile/profile-module/profile-module.mo
     MatIconModule,
     MatMenuModule,
     MatButtonModule,
+    MatCardModule,
+    MatProgressBarModule,
     MatSelectModule,
     SharedModuleModule,
     AttendanceModuleModule,
