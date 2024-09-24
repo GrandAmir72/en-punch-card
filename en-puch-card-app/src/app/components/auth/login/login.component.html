@@ -3,8 +3,8 @@
       <label class="form-label">Email:</label>
       <input formControlName="email" type="email" class="form-control" />
       <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
-        <small *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</small>
-        <small *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format.</small>
+        <small class="text-danger" *ngIf="loginForm.get('email')?.errors?.['required']">Email is required.</small>
+        <small class="text-danger" *ngIf="loginForm.get('email')?.errors?.['email']">Invalid email format.</small>
       </div>
     </div>
   
@@ -12,8 +12,7 @@
       <label class="form-label">Password:</label>
       <input formControlName="password" type="password" class="form-control" />
       <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
-        <small *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</small>
-        <small *ngIf="loginForm.get('password')?.errors?.['minlength']">Password must be at least 6 characters long.</small>
+        <small class="text-danger" *ngIf="loginForm.get('password')?.errors?.['required']">Password is required.</small>
       </div>
     </div>
   

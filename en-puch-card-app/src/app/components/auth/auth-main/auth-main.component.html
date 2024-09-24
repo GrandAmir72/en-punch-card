@@ -1,14 +1,18 @@
 <div class="container">
     <div class="row">
-        <div class="col-5 mx-auto">
-            <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
-                <mat-tab label="Login">
-                    <app-login></app-login>
-                </mat-tab>
-                <mat-tab label="Register">
-                    <app-signup></app-signup>
-                </mat-tab>
-              </mat-tab-group>
+        <div class="col-5 mx-auto" style="height: 100vh;">
+            <div style="margin: 50% 0 50% 0;">
+                <img class="d-block m-auto mb-3"  src="assets\img\punch-card-logo.png" alt="punch-super-widget" srcset=""
+                height="90" width="90">
+                <mat-tab-group mat-stretch-tabs="true" mat-align-tabs="start">
+                    <mat-tab label="Login">
+                        <app-login></app-login>
+                    </mat-tab>
+                    <mat-tab label="Register">
+                        <app-signup></app-signup>
+                    </mat-tab>
+                  </mat-tab-group>
+            </div>
         </div>
     </div>
 </div>
