@@ -1,18 +1,23 @@
 <h3 mat-dialog-title class="m-0">Send message to all employees </h3>
 <mat-dialog-content class="p-3">
     <mat-form-field appearance="outline" class="w-100">
-        <mat-label>Message</mat-label>
+        <mat-label>Title Message</mat-label>
         <input matInput placeholder="Message">
     </mat-form-field>
-    <!-- <mat-form-field>
+    <mat-form-field appearance="outline" class="w-100">
         <mat-label>Choose a date</mat-label>
         <input matInput [matDatepicker]="picker">
-        <mat-hint>MM/DD/YYYY</mat-hint>
         <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field> -->
-    <p>Description of office</p>
+    </mat-form-field>
+    <p class="h5">Message</p>
     <textarea class="form-control my-2" rows="5"></textarea>
+    <mat-radio-group aria-label="Select an option" class="d-flex justify-content-between mt-4">
+        <mat-radio-button value="1"><span class="text-info">Notification</span></mat-radio-button>
+        <mat-radio-button value="2"><span class="text-warning">Warning</span></mat-radio-button>
+        <mat-radio-button value="3"><span class="text-danger">Alert</span></mat-radio-button>
+        <mat-radio-button value="4"><span class="text-success">Success</span></mat-radio-button>
+    </mat-radio-group>
 </mat-dialog-content>
 <mat-dialog-actions>
     <button mat-raised-button mat-dialog-close>Close</button>

@@ -11,6 +11,8 @@ import { AuthModuleModule } from './components/auth/auth-module/auth-module.modu
 import { LandingComponent } from './components/landing/landing.component';
 import { DashboardModuleModule } from './components/Dashboard/dashboard-module/dashboard-module.module';
 import { SharedModuleModule } from './components/Shared/shared-module/shared-module.module';
+import {MatNativeDateModule} from '@angular/material/core';
+
 @NgModule({
   declarations: [AppComponent, LandingComponent],
   imports: [
@@ -19,6 +21,7 @@ import { SharedModuleModule } from './components/Shared/shared-module/shared-mod
     AuthModuleModule,
     DashboardModuleModule,
     SharedModuleModule,
+    MatNativeDateModule
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],

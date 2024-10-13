@@ -45,7 +45,7 @@ export class EmployeeManagmentComponent {
   }
   sendGroupMsg() {
     this.dialog.open(DialogSendGroupMsgsComponent,{
-      height: '600px',
+      height: '570px',
       width: '600px',
     });
   }

@@ -15,6 +15,8 @@ import { MatStepperModule } from '@angular/material/stepper';
 import { MatChipsModule } from '@angular/material/chips';
 import { FormsModule } from '@angular/forms';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import {MatRadioModule} from '@angular/material/radio';
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -72,6 +74,8 @@ import { DialogSendGroupMsgsComponent } from '../employee-managment/dialog-send-
     MatStepperModule,
     MatChipsModule,
     MatAutocompleteModule,
+    MatDatepickerModule,
+    MatRadioModule,
     OfficesModuleRoutingModule,
   ],
 })
