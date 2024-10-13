@@ -3,27 +3,27 @@
         <h4>Personal Reports</h4>
         <div class="row">
             <div class="col-6">
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(1)">
                     Personal Report 1
                 </div>
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(2)">
                     Personal Report 2
                 </div>
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(3)">
                     Personal Report 3
                 </div>
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(4)">
                     Personal Report 4
                 </div>
             </div>
             <div class="col-6">
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(5)">
                     Personal Report 5
                 </div>
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(6)">
                     Personal Report 6
                 </div>
-                <div class="card border-warning p-3 my-2 w-100">
+                <div class="card border-warning p-3 my-2 w-100" (click)="switchBtns(7)">
                     Personal Report 7
                 </div>
             </div>
@@ -34,43 +34,50 @@
         <h4>Office Reports</h4>
         <div class="row">
             <div class="col-6">
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(8)">
                     Office Report 1
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(9)">
                     Office Report 2
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(10)">
                     Office Report 3
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(11)">
                     Office Report 4
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(12)">
                     Office Report 5
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(13)">
                     Office Report 6
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(14)">
                     Office Report 7
                 </div>
             </div>
             <div class="col-6">
 
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(15)">
                     Office Report 8
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(16)">
                     Office Report 9
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(17)">
                     Office Report 10
                 </div>
-                <div class="card border-primary p-3 my-2 w-100">
+                <div class="card border-primary p-3 my-2 w-100" (click)="switchBtns(18)">
                     Office Report 11
                 </div>
             </div>
         </div>
     </div>
 </div>
+@if (showReport){
+    <div class="row mt-2">
+        <div class="col-12 bg-primary">
+            <h3 class="text-light m-0 py-2">{{numberOfReport}}</h3>
+        </div>
+    </div>
+}
