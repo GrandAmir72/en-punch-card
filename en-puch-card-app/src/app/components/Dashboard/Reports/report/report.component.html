@@ -75,9 +75,12 @@
     </div>
 </div>
 @if (showReport){
-    <div class="row mt-2">
-        <div class="col-12 bg-primary">
-            <h3 class="text-light m-0 py-2">{{numberOfReport}}</h3>
-        </div>
+<div class="row mt-2">
+    <div class="col-12 bg-primary">
+        <h3 class="text-light m-0 py-2">{{numberOfReport}}</h3>
     </div>
+    <div class="col-12">
+        <app-report-send-temp></app-report-send-temp>
+    </div>
+</div>
 }
