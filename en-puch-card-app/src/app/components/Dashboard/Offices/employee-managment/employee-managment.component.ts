@@ -1,6 +1,8 @@
 import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { DialoNewEmployeeComponent } from './dialo-new-employee/dialo-new-employee.component';
+import { DialogAllSentMessagesComponent } from './dialog-all-sent-messages/dialog-all-sent-messages.component';
+import { DialogSendGroupMsgsComponent } from './dialog-send-group-msgs/dialog-send-group-msgs.component';
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -34,6 +36,17 @@ export class EmployeeManagmentComponent {
       height: '600px',
       width: '600px',
     });
-
+  }
+  sentAllMsgsDialog() {    
+    this.dialog.open(DialogAllSentMessagesComponent,{
+      height: '600px',
+      width: '600px',
+    });
+  }
+  sendGroupMsg() {
+    this.dialog.open(DialogSendGroupMsgsComponent,{
+      height: '600px',
+      width: '600px',
+    });
   }
 }

@@ -9,12 +9,12 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatSelectModule} from '@angular/material/select';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatChipsModule} from '@angular/material/chips';
-import {FormsModule} from '@angular/forms';
-import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatSelectModule } from '@angular/material/select';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatChipsModule } from '@angular/material/chips';
+import { FormsModule } from '@angular/forms';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 import { OfficesModuleRoutingModule } from './offices-module-routing.module';
 import { AllOfficesComponent } from '../all-offices/all-offices.component';
@@ -31,8 +31,9 @@ import { SpecialAttendanceSettingComponent } from '../attendance-managment/speci
 import { DialogAddShiftComponent } from '../attendance-managment/dialog-add-shift/dialog-add-shift.component';
 import { DialogEditShiftComponent } from '../attendance-managment/dialog-edit-shift/dialog-edit-shift.component';
 import { DialogEditWorkplaceComponent } from '../workplace/dialog-edit-workplace/dialog-edit-workplace.component';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DialogAllSentMessagesComponent } from '../employee-managment/dialog-all-sent-messages/dialog-all-sent-messages.component';
+import { DialogSendGroupMsgsComponent } from '../employee-managment/dialog-send-group-msgs/dialog-send-group-msgs.component';
 
 @NgModule({
   declarations: [
@@ -46,10 +47,12 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
     DialogNewWorkplaceComponent,
     DialogEditWorkplaceComponent,
     DialoNewEmployeeComponent,
+    DialogSendGroupMsgsComponent,
+    DialogAllSentMessagesComponent,
     GeneralAttendanceSettingComponent,
     SpecialAttendanceSettingComponent,
     DialogAddShiftComponent,
-    DialogEditShiftComponent
+    DialogEditShiftComponent,
   ],
   imports: [
     CommonModule,
