@@ -12,13 +12,23 @@
                     </div>
                 </div>
                 <!-- profile-info  -->
-                <div class="col-5">
-                    <span>
+                <div class="col-10">
+                    <p>
                         <span>Username: <strong>Username</strong></span>
+                    </p>
+                    <p>
+                        <span>Phonenumber: <strong>+989123456789</strong></span>
+                    </p>
+                    <p>
+                        <span>Activation date: <strong>2024/01/01</strong></span>
+                    </p>
+                    <span class="d-flex justify-content-between">
+                        <span>Number of Offices <span class="badge bg-info">0</span></span>
+                        <span>Number of Attendances <span class="badge bg-warning">0</span></span>
+                        <span>Number of Messages <span class="badge bg-danger">0</span></span>
                     </span>
+                    <button class="btn btn-outline-danger my-2" (click)="changePassword()">Change Password</button>
                 </div>
-                <!-- office-info -->
-                <div class="col-5"></div>
             </div>
         </mat-expansion-panel>
     </mat-accordion>
@@ -30,7 +40,13 @@
                 <mat-panel-title> My Invitations </mat-panel-title>
             </mat-expansion-panel-header>
             <div class="row">
-
+                <div class="col-12">
+                    @if (invitations === 0) {
+                        <div class="bg-info py-3 rounded text-center text-light">
+                            <p class="p-0 m-0">You have not been sent an invitation</p>
+                        </div>
+                    }
+                </div>
             </div>
         </mat-expansion-panel>
     </mat-accordion>
@@ -43,7 +59,10 @@
                     <mat-panel-title> Payments </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="row">
-
+                    <div class="col-12">
+                        <button class="btn btn-outline-warning w-100 mb-1" (click)="showAllOrders()">Orders</button>
+                        <button class="btn btn-outline-warning w-100 my-1" (click)="showResources()">Resource</button>
+                    </div>
                 </div>
             </mat-expansion-panel>
         </mat-accordion>
@@ -55,7 +74,10 @@
                     <mat-panel-title> Connections </mat-panel-title>
                 </mat-expansion-panel-header>
                 <div class="row">
-
+                    <div class="col-12">
+                        <button class="btn btn-outline-primary w-100 mb-1" disabled>Telegram Sync <span class="badge bg-danger">soon</span></button>
+                        <button class="btn btn-outline-primary w-100 my-1" disabled>Token <span class="badge bg-danger">soon</span></button>
+                    </div>
                 </div>
             </mat-expansion-panel>
         </mat-accordion>
