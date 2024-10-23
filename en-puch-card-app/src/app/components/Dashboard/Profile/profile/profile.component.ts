@@ -28,7 +28,7 @@ export class ProfileComponent {
   }
   showResources(){
     this.dialog.open(DialogResourcesComponent, {
-      height: '600px',
+      height: '500px',
       width: '900px',
     });
   }
