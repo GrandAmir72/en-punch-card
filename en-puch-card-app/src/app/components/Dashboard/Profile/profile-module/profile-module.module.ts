@@ -12,8 +12,8 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { BrowserModule } from '@angular/platform-browser';
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,
+    MatTableModule,
     ReactiveFormsModule,
     ProfileModuleRoutingModule,
   ],
