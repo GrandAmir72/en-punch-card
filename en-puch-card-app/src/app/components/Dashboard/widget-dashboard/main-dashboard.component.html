@@ -9,13 +9,11 @@
                     <mat-icon>add_circle_outline</mat-icon>
                     Add Attendance
                 </button>
-                <button class="float-end mx-2" mat-raised-button
-                    [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                <button class="float-end mx-2" mat-raised-button (click)="addMissionDialog()">
                     <mat-icon>card_travel</mat-icon>
                     Add Mission
                 </button>
-                <button class="float-end mx-2" mat-raised-button
-                    [routerLink]="['/dashboard/attendance/setAttendance'] ">
+                <button class="float-end mx-2" mat-raised-button (click)="addLeaveDialog()">
                     <mat-icon>free_breakfast</mat-icon>
                     Add Leave
                 </button>

@@ -14,11 +14,21 @@ import { AttendanceModuleModule } from '../Attendance/attendance-module/attendan
 import { ReportModuleModule } from '../Reports/report-module/report-module.module';
 import { CartableModule } from '../Cartable/cartable-module/cartable.module';
 import { ProfileModuleModule } from '../Profile/profile-module/profile-module.module';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import {MatCardModule} from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatCardModule } from '@angular/material/card';
+import { DialogAddLeaveComponent } from '../widget-dashboard/dialog-add-leave/dialog-add-leave.component';
+import { DialogAddMissionComponent } from '../widget-dashboard/dialog-add-mission/dialog-add-mission.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
-  declarations: [DashboardComponent, MainDashboardComponent, NavbarComponent],
+  declarations: [
+    DashboardComponent,
+    MainDashboardComponent,
+    NavbarComponent,
+    DialogAddLeaveComponent,
+    DialogAddMissionComponent,
+  ],
   imports: [
     CommonModule,
     DashboardModuleRoutingModule,
@@ -32,8 +42,10 @@ import {MatCardModule} from '@angular/material/card';
     AttendanceModuleModule,
     ReportModuleModule,
     CartableModule,
+    MatDialogModule,
     ProfileModuleModule,
-    OfficesModuleModule
+    MatInputModule,
+    OfficesModuleModule,
   ],
 })
 export class DashboardModuleModule {}
