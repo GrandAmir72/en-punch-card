@@ -16,7 +16,7 @@ export class ProfileComponent {
   constructor() {}
   changePassword() {
     this.dialog.open(DialogChangePasswordComponent, {
-      height: '400px',
+      height: '350px',
       width: '600px',
     });
   }
