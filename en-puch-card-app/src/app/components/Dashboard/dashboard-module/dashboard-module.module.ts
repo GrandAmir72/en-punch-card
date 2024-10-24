@@ -20,6 +20,9 @@ import { DialogAddLeaveComponent } from '../widget-dashboard/dialog-add-leave/di
 import { DialogAddMissionComponent } from '../widget-dashboard/dialog-add-mission/dialog-add-mission.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
+import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
 
 @NgModule({
   declarations: [
@@ -45,6 +48,9 @@ import { MatInputModule } from '@angular/material/input';
     MatDialogModule,
     ProfileModuleModule,
     MatInputModule,
+    FormsModule,
+    MatDatepickerModule,
+    MatRadioModule,
     OfficesModuleModule,
   ],
 })
