@@ -11,14 +11,17 @@
             <button mat-menu-item>Logout</button>
         </mat-menu>
         <div class="set-alternative-justify collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="border-0" mat-stroked-button [routerLink]="['/dashboard']"
+            routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Dashobard</button>
             <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/offices/all']"
                 routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Offices</button>
             <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/reports/mainReport']" routerLinkActive="active-button"
                 [routerLinkActiveOptions]="{ exact: true }">Reports</button>
             <button class="border-0" mat-stroked-button [routerLink]="['/dashboard/attendance/setAttendance']"
                 routerLinkActive="active-button" [routerLinkActiveOptions]="{ exact: true }">Attendance</button>
-            <button disabled class="border-0" mat-stroked-button [routerLink]="['/dashboard/cartable/all']" routerLinkActive="active-button"
-                [routerLinkActiveOptions]="{ exact: true }">Cartable <sup class="badge bg-danger">soon</sup></button>
+            <button  class="border-0" mat-stroked-button [routerLink]="['/dashboard/cartable/all']" routerLinkActive="active-button"
+                [routerLinkActiveOptions]="{ exact: true }">Cartable </button>
+                <!-- <sup class="badge bg-danger">soon</sup> -->
             <!-- <button class="border-0" mat-stroked-button routerLinkActive="active-button"
                 [routerLinkActiveOptions]="{ exact: true }">Leave</button>
             <button class="border-0" mat-stroked-button routerLinkActive="active-button"
@@ -33,7 +36,7 @@
                 <mat-icon>notifications</mat-icon>
             </button> -->
         </div>
-        <img class="pointer-cursor-header" src="assets\img\punch-widget.png" alt="punch-super-widget" srcset=""
+        <img class="pointer-cursor-header" src="assets\img\punch-card-logo.png" alt="punch-super-widget" srcset=""
             height="40" width="40" [routerLink]="['/dashboard']">
     </div>
 </nav>
