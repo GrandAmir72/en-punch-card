@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  // { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   {
     path: 'auth',
     loadChildren: () =>
@@ -19,6 +19,10 @@ const routes: Routes = [
         './components/Dashboard/dashboard-module/dashboard-module.module'
       ).then((m) => m.DashboardModuleModule),
   },
+  {
+    path:'',
+    component:LandingComponent,
+  }
 ];
 
 @NgModule({

@@ -1,1 +1,217 @@
-<p>landing works!</p>
+<div class="container-fluid my-2 py-2">
+    <div class="row">
+        <!-- header -->
+        <div class="col-12">
+            <div class="d-flex justify-content-evenly">
+                <img src="assets/img/punch-card-logo.png" alt="" srcset="" width="50" height="50">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            @for (menu of landingItems; track $index) {
+                            <li class="nav-item">
+                                <a class="btn text-punch-blue" [href]="menu.ancher" target="_self">{{menu.name |
+                                    titlecase}}</a>
+                            </li>
+                            }
+
+                        </ul>
+                    </div>
+                </nav>
+
+
+                <a [routerLink]="['/auth']" mat-flat-button>Login / Signup</a>
+            </div>
+        </div>
+        <div class="col-12 text-center py-5">
+            <h1 class="p-0 m-0">Punch Card App</h1>
+            <h5 class="p-0 mb-0 mt-2">Detail is everthing and this text is not long</h5>
+            <div class="d-flex justify-content-evenly py-4">
+                <button mat-flat-button>Signup</button>
+                <button mat-raised-button>Login</button>
+            </div>
+            <img class="img-landing" src="assets/img/punch-card-landing.png" alt="" srcset="">
+        </div>
+        <!-- attr -->
+        <div class="col-12 vh-100" id="attr">
+            <h5 class="text-center">Attributes</h5>
+            <p class="text-center mb-5">Detail of deatils</p>
+            <div class="d-flex justify-content-evenly">
+                <div class="atrr-cards  bg-punch-red-outline">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+                <div class="atrr-cards bg-punch-red">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+                <div class="atrr-cards  bg-punch-red-outline">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-evenly mt-5">
+                <div class="atrr-cards  bg-punch-blue-outline">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+                <div class="atrr-cards bg-punch-blue">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+                <div class="atrr-cards  bg-punch-blue-outline">
+                    <img class="py-5" src="assets/img/cd.svg" alt="">
+                    <p>Title of attr</p>
+                    <span>Detail of attr </span>
+                </div>
+            </div>
+        </div>
+        <!-- whyus -->
+        <div class="col-12 vh-100" id="services">
+            <h3 class="text-center">Why US?</h3>
+            <p class="text-center mb-5">Detail of deatils</p>
+            <div class="row">
+                <div class="col-6 ">
+                    <div class="bg-punch-cyan-outline hei-90 d-block m-0 m-auto">
+                        <img class="img-landing" src="assets/img/punch-card-landing.png" alt="" srcset="">
+                        <h3>You are our customer!</h3>
+                        <p>Detail detail detail detail Detail detail detail detail Detail detail detail detail Detail
+                            detail detail detail Detail detail detail detail Detail detail detail detail Detail detail
+                            detail detail Detail detail detail detail Detail detail detail detail Detail detail detail
+                            detail </p>
+                    </div>
+                </div>
+                <div class="col-6 ">
+                    <div class="bg-punch-black-outline hei-90 d-block m-0 m-auto">
+                        <img class="img-landing" src="assets/img/punch-card-landing.png" alt="" srcset="">
+                        <h3>No geographical restrictions!</h3>
+                        <p>Detail detail detail detail Detail detail detail detail Detail detail detail detail Detail
+                            detail detail detail Detail detail detail detail Detail detail detail detail Detail detail
+                            detail detail Detail detail detail detail Detail detail detail detail Detail detail detail
+                            detail </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- plans -->
+        <div class="col-12 vh-100" id="plans">
+            <div class="row">
+                <h3 class="text-center">Plans</h3>
+                <div class="col-4 ">
+                    <div class="bg-punch-blue-outline">
+                        <div class="palns-header">Header</div>
+                        <div class="plans-body">
+                            <ul>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <hr>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                            </ul>
+                        </div>
+                        <div class="plans-footer">
+                            <button class="btn d-block m-0 m-auto bg-punch-blue w-75 ">Footer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="bg-punch-blue-outline">
+                        <div class="palns-header">Header</div>
+                        <div class="plans-body">
+                            <ul>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <hr>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                            </ul>
+                        </div>
+                        <div class="plans-footer">
+                            <button class="btn d-block m-0 m-auto bg-punch-blue w-75 ">Footer</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 ">
+                    <div class="bg-punch-blue-outline">
+                        <div class="palns-header">Header</div>
+                        <div class="plans-body">
+                            <ul>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <hr>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                                <li>detail</li>
+                            </ul>
+                        </div>
+                        <div class="plans-footer">
+                            <button class="btn d-block m-0 m-auto bg-punch-blue w-75 ">Footer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <div class="col-12 punch-footer">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/img/punch-card-logo.png" alt="" srcset="" width="50" height="50">
+                    <p class="text-punch-blue mt-2">Punch Card</p>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                @for (menu of landingItems; track $index) {
+                                <li class="nav-item">
+                                    <a class="text-punch-blue me-5 " [href]="menu.ancher" target="_self">{{menu.name |
+                                        titlecase}}</a>
+                                </li>
+                                }
+        
+                            </ul>
+                        </div>
+                    </nav>
+                    <p class="text-punch-blue">© All rights reserved for this software for the Punch Card website. Supported and sponsored by Matin Rayane Arian Engineering Company</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
