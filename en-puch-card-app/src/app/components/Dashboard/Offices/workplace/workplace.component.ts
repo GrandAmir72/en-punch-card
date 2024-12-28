@@ -13,9 +13,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 1, name: 'Hydrogen', type: 's', setting:'x'},
 ];
 @Component({
-  selector: 'app-workplace',
-  templateUrl: './workplace.component.html',
-  styleUrl: './workplace.component.css'
+    selector: 'app-workplace',
+    templateUrl: './workplace.component.html',
+    styleUrl: './workplace.component.css',
+    standalone: false
 })
 export class WorkplaceComponent {
   displayedColumns: string[] = ['position', 'name', 'type', 'setting'];

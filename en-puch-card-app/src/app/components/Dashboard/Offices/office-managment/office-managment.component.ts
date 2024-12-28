@@ -5,9 +5,10 @@ import { MatChipInputEvent } from '@angular/material/chips';
 import {MatAutocompleteModule, MatAutocompleteSelectedEvent} from '@angular/material/autocomplete';
 
 @Component({
-  selector: 'app-office-managment',
-  templateUrl: './office-managment.component.html',
-  styleUrl: './office-managment.component.css'
+    selector: 'app-office-managment',
+    templateUrl: './office-managment.component.html',
+    styleUrl: './office-managment.component.css',
+    standalone: false
 })
 export class OfficeManagmentComponent {
   readonly separatorKeysCodes: number[] = [ENTER, COMMA];

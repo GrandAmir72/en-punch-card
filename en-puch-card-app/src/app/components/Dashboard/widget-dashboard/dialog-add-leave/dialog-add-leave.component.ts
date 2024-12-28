@@ -1,9 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 @Component({
-  selector: 'app-dialog-add-leave',
-  templateUrl: './dialog-add-leave.component.html',
-  styleUrl: './dialog-add-leave.component.css'
+    selector: 'app-dialog-add-leave',
+    templateUrl: './dialog-add-leave.component.html',
+    styleUrl: './dialog-add-leave.component.css',
+    standalone: false
 })
 export class DialogAddLeaveComponent {
   currentStep: number = 1;

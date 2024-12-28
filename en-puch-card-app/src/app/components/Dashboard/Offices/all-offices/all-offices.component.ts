@@ -4,9 +4,10 @@ import { Title } from '@angular/platform-browser';
 import { AddOfficeComponent } from '../../../Shared/add-office/add-office.component';
 
 @Component({
-  selector: 'app-all-offices',
-  templateUrl: './all-offices.component.html',
-  styleUrl: './all-offices.component.css',
+    selector: 'app-all-offices',
+    templateUrl: './all-offices.component.html',
+    styleUrl: './all-offices.component.css',
+    standalone: false
 })
 export class AllOfficesComponent implements OnInit {
   readonly dialog = inject(MatDialog);

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-add-office',
-  templateUrl: './add-office.component.html',
-  styleUrl: './add-office.component.css',
+    selector: 'app-add-office',
+    templateUrl: './add-office.component.html',
+    styleUrl: './add-office.component.css',
+    standalone: false
 })
 export class AddOfficeComponent {
   currentStep: number = 1;

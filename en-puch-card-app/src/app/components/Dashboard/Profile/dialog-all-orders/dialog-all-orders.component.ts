@@ -20,9 +20,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 8, plane: 'Basic',dateOfOrder:'2021/10/02',status:'1',detail:'1',pay:'1'},
 ];
 @Component({
-  selector: 'app-dialog-all-orders',
-  templateUrl: './dialog-all-orders.component.html',
-  styleUrl: './dialog-all-orders.component.css'
+    selector: 'app-dialog-all-orders',
+    templateUrl: './dialog-all-orders.component.html',
+    styleUrl: './dialog-all-orders.component.css',
+    standalone: false
 })
 export class DialogAllOrdersComponent {
   displayedColumns: string[] = ['position', 'plane', 'dateOfOrder', 'status','detail','pay'];

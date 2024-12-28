@@ -23,9 +23,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 @Component({
-  selector: 'app-employee-managment',
-  templateUrl: './employee-managment.component.html',
-  styleUrl: './employee-managment.component.css'
+    selector: 'app-employee-managment',
+    templateUrl: './employee-managment.component.html',
+    styleUrl: './employee-managment.component.css',
+    standalone: false
 })
 export class EmployeeManagmentComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

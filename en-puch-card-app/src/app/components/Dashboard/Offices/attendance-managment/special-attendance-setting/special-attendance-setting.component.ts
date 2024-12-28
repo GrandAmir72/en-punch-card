@@ -15,9 +15,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'}
 ];
 @Component({
-  selector: 'app-special-attendance-setting',
-  templateUrl: './special-attendance-setting.component.html',
-  styleUrl: './special-attendance-setting.component.css'
+    selector: 'app-special-attendance-setting',
+    templateUrl: './special-attendance-setting.component.html',
+    styleUrl: './special-attendance-setting.component.css',
+    standalone: false
 })
 export class SpecialAttendanceSettingComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

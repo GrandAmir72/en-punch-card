@@ -2,9 +2,10 @@ import { Component, inject } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-dialog-add-mission',
-  templateUrl: './dialog-add-mission.component.html',
-  styleUrl: './dialog-add-mission.component.css'
+    selector: 'app-dialog-add-mission',
+    templateUrl: './dialog-add-mission.component.html',
+    styleUrl: './dialog-add-mission.component.css',
+    standalone: false
 })
 export class DialogAddMissionComponent {
   currentStep: number = 1;

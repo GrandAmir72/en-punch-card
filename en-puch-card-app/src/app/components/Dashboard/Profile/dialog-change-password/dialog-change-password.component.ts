@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-dialog-change-password',
-  templateUrl: './dialog-change-password.component.html',
-  styleUrl: './dialog-change-password.component.css'
+    selector: 'app-dialog-change-password',
+    templateUrl: './dialog-change-password.component.html',
+    styleUrl: './dialog-change-password.component.css',
+    standalone: false
 })
 export class DialogChangePasswordComponent {
   passwordForm: FormGroup;

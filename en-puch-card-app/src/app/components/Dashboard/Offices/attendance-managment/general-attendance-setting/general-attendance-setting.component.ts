@@ -19,9 +19,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 @Component({
-  selector: 'app-general-attendance-setting',
-  templateUrl: './general-attendance-setting.component.html',
-  styleUrl: './general-attendance-setting.component.css'
+    selector: 'app-general-attendance-setting',
+    templateUrl: './general-attendance-setting.component.html',
+    styleUrl: './general-attendance-setting.component.css',
+    standalone: false
 })
 export class GeneralAttendanceSettingComponent {
   

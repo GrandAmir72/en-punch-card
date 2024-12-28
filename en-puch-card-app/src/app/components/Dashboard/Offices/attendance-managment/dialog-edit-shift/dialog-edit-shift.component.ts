@@ -19,9 +19,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 @Component({
-  selector: 'app-dialog-edit-shift',
-  templateUrl: './dialog-edit-shift.component.html',
-  styleUrl: './dialog-edit-shift.component.css'
+    selector: 'app-dialog-edit-shift',
+    templateUrl: './dialog-edit-shift.component.html',
+    styleUrl: './dialog-edit-shift.component.css',
+    standalone: false
 })
 export class DialogEditShiftComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

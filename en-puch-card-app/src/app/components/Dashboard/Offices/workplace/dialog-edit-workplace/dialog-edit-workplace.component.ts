@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-dialog-edit-workplace',
-  templateUrl: './dialog-edit-workplace.component.html',
-  styleUrl: './dialog-edit-workplace.component.css'
+    selector: 'app-dialog-edit-workplace',
+    templateUrl: './dialog-edit-workplace.component.html',
+    styleUrl: './dialog-edit-workplace.component.css',
+    standalone: false
 })
 export class DialogEditWorkplaceComponent {
   showTheMap:boolean = false;

@@ -20,9 +20,10 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
 ];
 @Component({
-  selector: 'app-dialog-all-sent-messages',
-  templateUrl: './dialog-all-sent-messages.component.html',
-  styleUrl: './dialog-all-sent-messages.component.css'
+    selector: 'app-dialog-all-sent-messages',
+    templateUrl: './dialog-all-sent-messages.component.html',
+    styleUrl: './dialog-all-sent-messages.component.css',
+    standalone: false
 })
 export class DialogAllSentMessagesComponent {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

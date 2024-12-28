@@ -5,9 +5,10 @@ import { DialogAllOrdersComponent } from '../dialog-all-orders/dialog-all-orders
 import { DialogResourcesComponent } from '../dialog-resources/dialog-resources.component';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrl: './profile.component.css',
+    selector: 'app-profile',
+    templateUrl: './profile.component.html',
+    styleUrl: './profile.component.css',
+    standalone: false
 })
 export class ProfileComponent {
   invitations: number | undefined = 0;
