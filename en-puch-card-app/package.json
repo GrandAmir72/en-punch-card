@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:en-puch-card-app": "node dist/en-puch-card-app/server/server.mjs"
+    "serve:ssr:en-puch-card-app": "node dist/en-puch-card-app/server/server.mjs",
+    "build:ssr": "ng build && ng run en-puch-card-app:server"
   },
   "private": true,
   "dependencies": {

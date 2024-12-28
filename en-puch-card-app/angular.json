@@ -46,26 +46,38 @@
               "node_modules/bootstrap/dist/js/bootstrap.js"
             ],
             "server": "src/main.server.ts",
-            "prerender": true,
+            "prerender": {
+              "routes": [
+                "/",
+                "/about",
+                "/contact"
+              ]
+            },
             "ssr": {
               "entry": "src/server.ts"
             }
           },
           "configurations": {
             "production": {
+              "optimization": {
+                "scripts": true,
+                "styles": true,
+                "fonts": true
+              },
+              "outputHashing": "all",
+              "sourceMap": false,
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "2MB",
+                  "maximumError": "2.5MB"
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kB",
-                  "maximumError": "4kB"
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
                 }
-              ],
-              "outputHashing": "all"
+              ]
             },
             "development": {
               "optimization": false,
@@ -109,6 +121,13 @@
               "src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "prerender": {
+          "builder": "@angular-devkit/build-angular:prerender",
+          "options": {
+            "routes": ["/", "/about", "/contact"],
+            "guessRoutes": true
           }
         }
       }
