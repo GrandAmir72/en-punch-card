@@ -1,10 +1,10 @@
 <div class="row">
-    <div class="col-12">
-        <span >
+    <div class="col-12 d-flex flex-column">
+        <span class="p-2 my-4" >
             <span class="h3 align-middle">Employee Managment</span>
-            <button  mat-raised-button class="ms-2 float-end" (click)="openDialog()"> <mat-icon>add</mat-icon> Add New Employee</button>
+            <button  mat-raised-button class="ms-2 float-end mt-2" (click)="openDialog()"> <mat-icon>add</mat-icon> Add New Employee</button>
         </span>
-        <div class="d-flex justify-content-start mt-2">
+        <div class="d-flex justify-content-start mt-2 my-4">
             <button mat-raised-button (click)="sentAllMsgsDialog()"><mat-icon> message</mat-icon> All Messages</button>
             <button mat-raised-button class="ms-2" (click)="sendGroupMsg()"> <mat-icon>send</mat-icon> Send Group
                 Message</button>

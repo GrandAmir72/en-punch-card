@@ -10,7 +10,7 @@
         <div class="row">
             @for (office of offices; track $index) {
             @if (office.isOwner) {
-            <div class="col-4 my-1">
+            <div class="col-lg-4 col-md-12 col-sm-12 my-1">
                 <mat-card appearance="outlined" class=" pointer-cursor-card" [routerLink]="['/dashboard/offices/office/',office.id]">
                     <mat-card-header>
                         <mat-card-title>{{office.name}} </mat-card-title>
